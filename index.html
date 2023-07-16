@@ -13,17 +13,17 @@
         <div class="search">
 
             <input type="text" placeholder="Enter Your City" spellcheck="false">
-            <button> <img src="images/search.png" alt=""></button>
+            <button> <img src="search.png" alt=""></button>
         
         </div>
     
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
+            <img src="rain.png" class="weather-icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">Kolhapur</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png">
+                    <img src="humidity.png">
                     <div>
                         <p> <span class="humidity">50%</span> </p>
                         <p>Humidity</p>
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="images/wind.png">
+                    <img src="wind.png">
                     <div>
                         <p> <span class="wind">15 KM/Hr</span> </p>
                         <p>Wind Speed</p>
@@ -61,15 +61,15 @@
             document.querySelector(".wind").textContent = data.wind.speed + " KM/Hr";
 
             if (data.weather[0].main === "Clouds") {
-                weatherIcon.src = "images/images/clouds.png";
+                weatherIcon.src = "clouds.png";
             } else if (data.weather[0].main === "Clear") {
-                weatherIcon.src = "images/images/clear.png";
+                weatherIcon.src = "clear.png";
             } else if (data.weather[0].main === "Rain") {
-                weatherIcon.src = "images/images/rain.png";
+                weatherIcon.src = "rain.png";
             } else if (data.weather[0].main === "Drizzle") {
-                weatherIcon.src = "images/images/drizzle.png";
+                weatherIcon.src = "drizzle.png";
             } else if (data.weather[0].main === "Mist") {
-                weatherIcon.src = "images/images/mist.png";
+                weatherIcon.src = "mist.png";
             }
         }
 
