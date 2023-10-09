@@ -62,13 +62,13 @@
 
             if (data.weather[0].main === "Clouds") {
                 weatherIcon.src = "clouds.png";
-            } else if (data.weather[0].main === "Clear") {
+            } else if (data.weather[1].main === "Clear") {
                 weatherIcon.src = "clear.png";
-            } else if (data.weather[0].main === "Rain") {
+            } else if (data.weather[2].main === "Rain") {
                 weatherIcon.src = "rain.png";
-            } else if (data.weather[0].main === "Drizzle") {
+            } else if (data.weather[3].main === "Drizzle") {
                 weatherIcon.src = "drizzle.png";
-            } else if (data.weather[0].main === "Mist") {
+            } else if (data.weather[4].main === "Mist") {
                 weatherIcon.src = "mist.png";
             }
         }
