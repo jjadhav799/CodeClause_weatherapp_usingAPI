@@ -61,15 +61,15 @@
             document.querySelector(".wind").textContent = data.wind.speed + " KM/Hr";
             
 
-            if (data.weather[0].main === "Clouds") {
+            if (data.weather[0].main === "clouds") {
                 weatherIcon.src = "clouds.png";
-            } else if (data.weather[1].main === "Clear") {
+            } else if (data.weather[1].main === "clear") {
                 weatherIcon.src = "clear.png";
-            } else if (data.weather[2].main === "Rain") {
+            } else if (data.weather[2].main === "rain") {
                 weatherIcon.src = "rain.png";
-            } else if (data.weather[3].main === "Drizzle") {
+            } else if (data.weather[3].main === "drizzle") {
                 weatherIcon.src = "drizzle.png";
-            } else if (data.weather[4].main === "Mist") {
+            } else if (data.weather[4].main === "mist") {
                 weatherIcon.src = "mist.png";
             }
         }
